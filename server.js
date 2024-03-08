@@ -1,17 +1,15 @@
-import express from "express";
-import mongoose from "mongoose";
+import express  from 'express';
+import mongoose  from "mongoose";
 import cors from "cors";
 import EmployeeModel from "./server/models/Employee.js";
 
 const app = express()
 app.use(express.json())
 app.use(cors())
-
 const port = process.env.PORT ||  3000;
-
 try{
     mongoose.connect("mongodb+srv://Mugarura:Kristen12$@streamline-analytics.ayhamee.mongodb.net/");
-    console.log("Connected to the database");
+    console.log("Connected to the");
 
     app.get("/testing", (req, res) => {
         return res.status(200).json({message:"We are working!!"})
