@@ -1,5 +1,5 @@
-import express from "express";
-import mongoose from "mongoose";
+import express  from 'express';
+import mongoose  from "mongoose";
 import cors from "cors";
 import EmployeeModel from "./server/models/Employee.js";
 
